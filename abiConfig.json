@@ -1,0 +1,59 @@
+{
+    "projectName": "CU-OSC-Terminus-Access-Control",
+    "buildDirectory": "build",
+    "abiOutputDirectory": "abis",
+    "abiConfigurations": [
+        {
+            "configuration": "lgInternal",
+            "sortedJSON": true,
+            "searchRecursively": true,
+            "contractsToInclude": [],
+            "contractsToIgnore": [
+                "IDiamondCut",
+                "IDiamondLoupe",
+                "IERC165",
+                "IERC173",
+                "MockToken",
+                "MockTerminus"
+            ],
+            "eventsToIgnore": [],
+            "functionsToIgnore": [],
+            "selectorsToIgnore": [],
+            "eventsPrecedence": {
+                "OwnershipTransferred": "LibDiamond",
+                "DiamondCut": "LibDiamond"
+            }
+        },
+        {
+            "configuration": "public",
+            "sortedJSON": true,
+            "searchRecursively": true,
+            "contractsToInclude": [],
+            "contractsToIgnore": [
+                "DiamondCutFacet",
+                "DiamondLoupeFacet",
+                "ExtendedDiamondCutFacet",
+                "DebugFacet",
+                "IDiamondCut",
+                "IDiamondLoupe",
+                "IERC173",
+                "Base64",
+                "OwnershipFacet"
+            ],
+            "eventsToIgnore": [
+                "DebugActivity",
+                "Example",
+                "DiamondCut"
+            ],
+            "functionsToIgnore": [
+                "init",
+                "diamondCut"
+            ],
+            "selectorsToIgnore": [],
+            "eventsPrecedence": {
+                "OwnershipTransferred": "LibDiamond",
+                "DiamondCut": "LibDiamond"
+            }
+        }
+    ]
+}
